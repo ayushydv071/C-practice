@@ -18,26 +18,14 @@ int sumOfDigits(int n){
     return sum;
 }
 bool checkArmstrong(int n){
-    int original = n;
-    int temp = n;
-    int Digitcount=0;
-    while(temp>0){
-        Digitcount++;
-        temp/=10;
-    }
-    temp = n;
-    int sum=0;
-    while(temp>0){
-        int Digit = temp%10;
-        int pow=1;
-        for(int i=0; i<=Digit; i++){
-            pow = pow*Digit;
-        }
-        sum += pow;
+    int sum = 0, temp = n;
+    while(temp > 0){
+        int digit = temp % 10;
+        sum += digit * digit * digit;
         temp /= 10;
 
     }
-    return sum==original;
+    return sum == n;
 }
 int main(){
     int n;
