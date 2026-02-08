@@ -27,6 +27,4 @@ int main(){
     EvenOddCount(v);
     cout << endl;
     return 0;
-
-
 }
