@@ -1,5 +1,5 @@
 //decimal to binary till n 
-//deminal to Binary
+//decimal to Binary
 #include<iostream>
 using namespace std;
 int decToBinary(int decNum){

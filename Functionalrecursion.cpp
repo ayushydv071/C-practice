@@ -1,4 +1,4 @@
-//using functinal recursion that return anything 
+//using functional recursion that return anything 
 #include<bits/stdc++.h>
 using namespace std;
 int sum(int n){

@@ -1,4 +1,4 @@
-//single number leetcode
+//single number Leetcode
 #include<iostream>
 #include<vector>
 using namespace std;

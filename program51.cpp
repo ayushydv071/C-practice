@@ -2,7 +2,7 @@
 using namespace std;
 void printPrime(int n){
     for (int i=1; i<=n; i++){
-            bool isPrime=true;
+        bool isPrime=true;
         for (int j=2; j<i; j++){
             if (i%j==0){
                 isPrime=false;

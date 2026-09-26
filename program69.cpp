@@ -7,14 +7,14 @@ int main(){
     int size = 6;
     int largest = INT_MIN;
     int smallest = INT_MAX;
-    int indexL = -1;
+    int indexLargest = -1;
     for (int i=0; i<size; i++){
         if(arr[i]>largest){
             largest = arr[i];
             indexL = i;
         }
     }
-    int indexS = -1;
+    int indexSmallest = -1;
     for (int i=0; i<size; i++){
         if(arr[i]<smallest){
             smallest = arr[i];
@@ -23,10 +23,11 @@ int main(){
 
 
     }
-    swap(arr[indexS], arr[indexL]);
+    swap(arr[indexSmallest], arr[indexLargest]);
     for (int i=0; i<size; i++){
         cout << arr[i] << " ";
     }
     cout << endl;
     return 0;
 }
+
